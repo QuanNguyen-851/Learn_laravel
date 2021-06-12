@@ -19,6 +19,8 @@ class Student extends Migration
             $table->string('email')->unique();
             $table->boolean('gender');
             $table->date('DOB');
+            $table->unsignedBigInteger('id_class');
+            $table->foreign('id_class')->references('id')->on('ClassRoom');
         });
     }
 
