@@ -9,7 +9,7 @@
 <body>
 
       @foreach ($menu as $a=>$value)
-     
+     <h1>fhgkjfg</h1>
         <div>
             <a href="<?=$a?> ">
               {{$value}} 
