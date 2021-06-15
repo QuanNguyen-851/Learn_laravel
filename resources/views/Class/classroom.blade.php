@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>classroom</h1>
+    <h1>classroomsdf</h1>
     <form action="{{ route('stored') }}" method="post">
         @csrf
     <input type="text" name="class"><br>
