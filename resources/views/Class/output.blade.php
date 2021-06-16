@@ -7,16 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <table border="1" >
+<tr>
+    <td>id</td>
+    <td>lớp</td>
+</tr>
+@foreach ($a as $item)
+<tr>
+    <td><?=$item->id?></td>
+    <td><?=$item->name?></td>
+</tr>
+    
+@endforeach
 
-      @foreach ($menu as $a=>$value)
-     
-        <div>
-            <a href="<?=$a?> ">
-              {{$value}} 
-            </a>
-        </div>
-      @endforeach
-         
-        
+    </table>
 </body>
 </html>

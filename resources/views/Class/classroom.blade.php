@@ -9,9 +9,10 @@
 <body>
     <h1>classroom fsdf</h1>
     <form action="{{ route('stored') }}" method="post">
-        @csrf
+    @csrf
     <input type="text" name="class"><br>
-    <button type="button">oke</button>
+    <button type="submit">oke</button>
     </form>
+    <a href="{{ route('output')}}">xem</a>
 </body>
 </html>

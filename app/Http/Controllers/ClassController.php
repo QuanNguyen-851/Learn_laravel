@@ -18,4 +18,12 @@ class ClassController extends Controller
             $name
         ]);
     }
+    public function output()
+    {
+        $list = DB::select('select * from classroom ');
+
+        return view('class.output', [
+            'a' => $list
+        ]);
+    }
 }

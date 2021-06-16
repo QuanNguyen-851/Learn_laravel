@@ -26,3 +26,4 @@ Route::get('/trang-chu', [MenuController::class, 'trangChu']);
 Route::get('/trang-ca-nhan', [MenuController::class, 'trangCaNhan']);
 Route::get('/class/classroom', [ClassController::class, 'classroom']);
 Route::post('/class/stored', [ClassController::class, 'stored'])->name('stored');
+Route::get('/class/output', [ClassController::class, 'output'])->name('output');
